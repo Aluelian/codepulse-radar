@@ -82,20 +82,7 @@ Configuração recomendada:
 - Build command: `npm run build`
 - Output directory: `dist`
 
-## Texto para postar no LinkedIn
 
-> Acabei de publicar um projeto novo no meu portfolio: CodePulse Radar.
->
-> A ideia foi criar uma interface que busca dados públicos do GitHub e mostra isso de uma forma mais visual e prática.
->
-> Nesse projeto trabalhei com HTML, CSS, JavaScript, TypeScript e Vite, focando em consumo de API, responsividade e experiência do usuário.
->
-> Foi um projeto bem interessante para praticar frontend com algo que parece real e útil, e que consigo usar como parte do meu portfolio.
->
-> Repositório: [link do GitHub]
-> Demo: [link do deploy]
->
-> Feedbacks são bem-vindos.
 
 ## Observação final
 
