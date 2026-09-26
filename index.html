@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CodePulse Radar: explore perfis e repositorios no GitHub com visual analytics em tempo real."
+    />
+    <title>CodePulse Radar | Portfolio API Project</title>
+  </head>
+  <body>
+    <div class="noise"></div>
+    <header class="hero reveal">
+      <p class="kicker">Projeto de Portfolio</p>
+      <h1>CodePulse Radar</h1>
+      <p class="hero-copy">
+        Um painel de inteligencia para explorar perfis do GitHub usando API publica,
+        TypeScript e uma interface autoral.
+      </p>
+    </header>
+
+    <main class="layout">
+      <section class="panel reveal" aria-labelledby="search-title">
+        <h2 id="search-title">Buscar perfil</h2>
+        <form id="search-form" class="search-form">
+          <label for="username" class="sr-only">Usuario do GitHub</label>
+          <input
+            id="username"
+            name="username"
+            type="text"
+            placeholder="ex: torvalds"
+            autocomplete="off"
+            required
+          />
+          <button type="submit">Analisar</button>
+        </form>
+        <p class="hint">
+          Dica: use seu proprio username e compartilhe screenshot no LinkedIn com
+          insights reais sobre seus repositorios.
+        </p>
+      </section>
+
+      <section id="status" class="status" aria-live="polite"></section>
+
+      <section id="profile" class="panel profile reveal" aria-labelledby="profile-title"></section>
+
+      <section class="grid-two">
+        <section id="languages" class="panel reveal" aria-labelledby="languages-title"></section>
+        <section id="repos" class="panel reveal" aria-labelledby="repos-title"></section>
+      </section>
+    </main>
+
+    <footer class="footer reveal">
+      <p>Feito com HTML, CSS, JavaScript e TypeScript.</p>
+      <p class="sub">Customize este projeto com sua identidade antes de publicar.</p>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
