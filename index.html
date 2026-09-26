@@ -18,9 +18,26 @@
         Um painel de inteligencia para explorar perfis do GitHub usando API publica,
         TypeScript e uma interface autoral.
       </p>
+      <div class="stack-row" aria-label="Tecnologias do projeto">
+        <span>GitHub API</span>
+        <span>TypeScript</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+      </div>
     </header>
 
     <main class="layout">
+      <section class="panel reveal about-card" aria-labelledby="about-title">
+        <h2 id="about-title">Sobre o projeto</h2>
+        <p>
+          CodePulse Radar foi pensado como um portfolio tech que transforma dados publicos
+          em uma experiencia visual simples, clara e profissional. O objetivo era unir
+          consulta de API, boa leitura de dados e apresentacao elegante para mostrar
+          habilidade em frontend e consumo de dados reais.
+        </p>
+      </section>
+
       <section class="panel reveal" aria-labelledby="search-title">
         <h2 id="search-title">Buscar perfil</h2>
         <form id="search-form" class="search-form">
@@ -35,6 +52,11 @@
           />
           <button type="submit">Analisar</button>
         </form>
+        <p class="hint">
+          Dica: use seu proprio username e compartilhe screenshot no LinkedIn com
+          insights reais sobre seus repositorios.
+        </p>
+        <div id="search-history" class="search-history" aria-live="polite"></div>
       </section>
 
       <section id="status" class="status" aria-live="polite"></section>
@@ -50,6 +72,7 @@
     <footer class="footer reveal">
       <p>Feito com HTML, CSS, JavaScript e TypeScript.</p>
       <p class="sub">Customize este projeto com sua identidade antes de publicar.</p>
+      <p class="sub"><a class="link" href="/mobile.html">Ver versao mobile dedicada</a></p>
     </footer>
 
     <script type="module" src="/src/main.ts"></script>

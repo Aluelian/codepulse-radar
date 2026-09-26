@@ -9,6 +9,8 @@ export interface GitHubUser {
   html_url: string;
   location: string | null;
   company: string | null;
+  blog: string | null;
+  twitter_username: string | null;
 }
 
 export interface GitHubRepo {

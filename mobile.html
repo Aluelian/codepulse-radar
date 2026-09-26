@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CodePulse Radar Mobile: versao pensada para smartphone com busca de perfis do GitHub."
+    />
+    <title>CodePulse Radar Mobile</title>
+  </head>
+  <body>
+    <main class="mobile-app">
+      <header class="mobile-hero reveal">
+        <p class="pill">Mobile Experience</p>
+        <h1>CodePulse Radar</h1>
+        <p class="mobile-copy">Painel do GitHub com layout focado em smartphone.</p>
+        <a class="switch-link" href="/index.html">Ir para versao desktop</a>
+      </header>
+
+      <section class="mobile-panel reveal" aria-labelledby="search-title">
+        <h2 id="search-title">Buscar perfil</h2>
+        <form id="search-form" class="mobile-form">
+          <label for="username" class="sr-only">Usuario do GitHub</label>
+          <input
+            id="username"
+            name="username"
+            type="text"
+            placeholder="ex: gaearon"
+            autocomplete="off"
+            required
+          />
+          <button type="submit">Analisar perfil</button>
+        </form>
+        <div id="search-history" class="search-history" aria-live="polite"></div>
+      </section>
+
+      <section id="status" class="status" aria-live="polite"></section>
+
+      <section id="profile" class="mobile-panel reveal" aria-labelledby="profile-title"></section>
+      <section id="languages" class="mobile-panel reveal" aria-labelledby="languages-title"></section>
+      <section id="repos" class="mobile-panel reveal" aria-labelledby="repos-title"></section>
+    </main>
+
+    <script type="module" src="/src/mobile.ts"></script>
+  </body>
+</html>

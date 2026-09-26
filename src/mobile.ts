@@ -1,4 +1,4 @@
-import "./styles.css";
+import "./mobile.css";
 import { getGitHubRepos, getGitHubUser } from "./api";
 import { revealOnScroll } from "./motion.js";
 import {
@@ -28,8 +28,8 @@ const languagesEl = requireElement<HTMLElement>("#languages");
 const reposEl = requireElement<HTMLElement>("#repos");
 const historyEl = requireElement<HTMLElement>("#search-history");
 
-const LAST_USERNAME_KEY = "radar-dev:last-username";
-const HISTORY_KEY = "radar-dev:history";
+const LAST_USERNAME_KEY = "codepulse:last-username";
+const HISTORY_KEY = "codepulse:history";
 
 function readHistory(): string[] {
   const raw = localStorage.getItem(HISTORY_KEY);
